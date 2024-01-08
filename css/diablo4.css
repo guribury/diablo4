@@ -1,0 +1,113 @@
+
+/* COMMON */
+body {
+  background-color: #272727;
+}
+.inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1260px;
+}
+img {
+  display: block;
+}
+
+/* TITLE */
+.dia4_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+}
+.dia4_title > img {
+  animation: title-bg 3s infinite;
+  animation-delay: 2s;
+}
+.dia4_title .logo {
+  position: absolute;
+  bottom: 100px;
+  animation: title-logo 2.3s forwards;
+}
+@keyframes title-logo {
+  0% {
+    transform: scale(1.2) translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes title-bg {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.8);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+/* REMOTE-BTN */
+.remote_btn {
+
+}
+.remote_btn > .inner {
+  background-color: #000;
+  background-image: url("http://img.danawa.com/danawaPcGoodsImages/shopdanawa/contents/diablo4/Diablo4_btn-bg.jpg");
+}
+.remote_btn .btn {
+  width: 100%;
+  height: 240px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.remote_btn .btn img {
+  width: 363px;
+  flex-direction: row;
+  filter: brightness(.5);
+  transition: .5s ease-in-out;
+  margin: 0 10px;
+}
+.remote_btn .btn img:hover {
+  filter: brightness(1.1) drop-shadow(5px 5px 5px rgba(0,0,0, .8));
+}
+
+/* CHARACTER */
+#character {
+
+}
+#character > .inner {
+  background-image: url("http://img.danawa.com/danawaPcGoodsImages/shopdanawa/contents/diablo4/Diablo4_02_2.jpg");
+  height: 985px;
+}
+#character .cha-list {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  top: 350px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+#character .cha-list .cha {
+
+}
+#character .cha-list .cha img {
+  margin: 0 5px;
+}
+#character .cha-list .cha img:first-child {
+  transition: .5s ease-in-out;
+  position: absolute;
+}
+#character .cha-list .cha img:hover {
+  opacity: 0;
+}
