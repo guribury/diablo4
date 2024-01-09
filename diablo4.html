@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
 
-  <!-- 리셋 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" /> <!--리셋-->
+  <!-- RESET -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" /> 
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/diablo4.css">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/diablo4.js"></script>
+
 </head>
 <body>
-  <!-- 타이틀 -->
+  <!-- TITLE -->
   <section class="title">
     <div class="inner">
       <div class="dia4_title">
@@ -21,7 +29,8 @@
       </div>
     </div>
   </section>
-  <!-- 리모트 버튼 -->
+  
+  <!-- REMOTE BTN -->
   <div class="remote_btn">
     <div class="inner">
       <div class="btn">
@@ -59,26 +68,47 @@
     <div class="inner">
       <ul class="cha-list">
         <li class="cha">
-          <img src="./src/cha/barbar_thum_off.jpg" alt="">
-          <img src="./src/cha/barbar_thum_on.jpg" alt="">
+          <img src="./src/cha/barbar_thum_off.jpg" alt="야만용사 캐릭터">
+          <img src="./src/cha/barbar_thum_on.jpg" alt="야먄용사 설명">
         </li>
         <li class="cha">
-          <img src="./src/cha/druid_thum_off.jpg" alt="">
-          <img src="./src/cha/druid_thum_on.jpg" alt="">
+          <img src="./src/cha/druid_thum_off.jpg" alt="드루이드 캐릭터">
+          <img src="./src/cha/druid_thum_on.jpg" alt="드루이드 설명">
         </li>
         <li class="cha">
-          <img src="./src/cha/necro_thum_off.jpg" alt="">
-          <img src="./src/cha/necro_thum_on.jpg" alt="">
+          <img src="./src/cha/necro_thum_off.jpg" alt="강령술사 캐릭터">
+          <img src="./src/cha/necro_thum_on.jpg" alt="강령술사 설명">
         </li>
         <li class="cha">
-          <img src="./src/cha/rogue_thum_off.jpg" alt="">
-          <img src="./src/cha/rogue_thum_on.jpg" alt="">
+          <img src="./src/cha/rogue_thum_off.jpg" alt="도적 캐릭터">
+          <img src="./src/cha/rogue_thum_on.jpg" alt="도적 설명">
         </li>
         <li class="cha">
-          <img src="./src/cha/socer_thum_off.jpg" alt="">
-          <img src="./src/cha/socer_thum_on.jpg" alt="">
+          <img src="./src/cha/socer_thum_off.jpg" alt="마법사 캐릭터">
+          <img src="./src/cha/socer_thum_on.jpg" alt="마법사 설명">
         </li>
       </ul>
+    </div>
+  </section>
+  <section id="playing-map">
+    <div class="inner">
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./src/maps/map-01.JPG" alt="조각난 봉우리"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-02.JPG" alt="스코스글랜"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-03.JPG" alt="메마른 평원"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-04.JPG" alt="케지스탄"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-05.JPG" alt="하웨자르"></div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./src/maps/arrow_right.png" alt="다음 내용보기">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./src/maps/arrow_left.png" alt="이전 내용보기">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
 </body>
