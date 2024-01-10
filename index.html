@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- RESET -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" /> 
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/diablo4.css">
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- SWIPER JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/diablo4.js"></script>
+
+</head>
+<body>
+  <!-- TITLE -->
+  <section class="title">
+    <div class="inner">
+      <div class="dia4_title">
+        <img src="./src/images/Diablo4_0.jpg" alt="타이틀 배경화면">
+        <div class="logo">
+          <img src="./src/images/logo.png" alt="로고 디아블로 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REMOTE BTN -->
+  <div class="remote_btn">
+    <div class="inner">
+      <div class="btn">
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_01.png" alt="디아블로 3 이후 성역">
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_02.png" alt="성역의 영웅들">
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_03.png" alt="타락에 물든 성역탐험">
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_04.png" alt="시즌 별 새로운 콘텐츠">
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_05.png" alt="샵다나와 추천사양">
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./src/btn/btn_06.png" alt="최고 사양으로 즐기는 디아블로 4">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="inner">
+      <img src="./src/images/Diablo4_01.jpg" alt="디아블로 3 이후 성역">
+    </div>
+  </section>
+
+  <!-- CHARACTER -->
+  <section id="character">
+    <div class="inner">
+      <ul class="cha-list">
+        <li class="cha">
+          <img src="./src/cha/barbar_thum_off.jpg" alt="야만용사 캐릭터">
+          <img src="./src/cha/barbar_thum_on.jpg" alt="야먄용사 설명">
+        </li>
+        <li class="cha">
+          <img src="./src/cha/druid_thum_off.jpg" alt="드루이드 캐릭터">
+          <img src="./src/cha/druid_thum_on.jpg" alt="드루이드 설명">
+        </li>
+        <li class="cha">
+          <img src="./src/cha/necro_thum_off.jpg" alt="강령술사 캐릭터">
+          <img src="./src/cha/necro_thum_on.jpg" alt="강령술사 설명">
+        </li>
+        <li class="cha">
+          <img src="./src/cha/rogue_thum_off.jpg" alt="도적 캐릭터">
+          <img src="./src/cha/rogue_thum_on.jpg" alt="도적 설명">
+        </li>
+        <li class="cha">
+          <img src="./src/cha/socer_thum_off.jpg" alt="마법사 캐릭터">
+          <img src="./src/cha/socer_thum_on.jpg" alt="마법사 설명">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- MAP -->
+  <section id="playing-map">
+    <div class="inner">
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./src/maps/map-01.JPG" alt="조각난 봉우리"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-02.JPG" alt="스코스글랜"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-03.JPG" alt="메마른 평원"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-04.JPG" alt="케지스탄"></div>
+          <div class="swiper-slide"><img src="./src/maps/map-05.JPG" alt="하웨자르"></div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./src/maps/arrow_right.png" alt="다음 내용보기">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./src/maps/arrow_left.png" alt="이전 내용보기">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- SHOPDANAWA -->
+  <section class="shopdanawa scroll-spy">
+    <div class="inner">
+      <img src="./src/shopdanawa/rose_01.png" alt="" class="rose rose01 back-to-position back-to-position-rose ">
+      <img src="./src/shopdanawa/rose_02.png" alt="" class="rose rose02 back-to-position back-to-position-rose to-down">
+      <img src="./src/shopdanawa/rose_03.png" alt="" class="rose rose03 back-to-position back-to-position-rose ">
+      <img src="./src/shopdanawa/rose_04.png" alt="" class="rose rose04 back-to-position back-to-position-rose to-down">
+      <img src="./src/shopdanawa/case.png" alt="" class="back-to-position to-up case">
+      <img src="./src/shopdanawa/img-text.png" alt="" class="back-to-position to-up delay--2s text">
+    </div>
+  </section>
+</body>
+</html>
