@@ -19,11 +19,15 @@ img {
   transform: translateY(250px);
 }
 .back-to-position.to-down {
-  transform: translateY(-150px);
+  transform: translateY(-600px);
 }
 .show .back-to-position {
   opacity: 1;
   transform: translateY(200px);
+}
+.show .back-to-position-rose {
+  opacity: 1;
+  transform: translateY(550px);
 }
 .back-to-position.delay--2s {
   transition-delay: .3s;
@@ -186,12 +190,37 @@ img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 1200px;
+  height: 1500px;
   background-color: #000;
+  overflow: hidden;
 }
-.shopdanawa > .inner > img {
+.shopdanawa > .inner .rose {
+  position: absolute;
+  transition: 6s;
+}
+.shopdanawa > .inner .rose.rose01 {
+  transform: translateY(30);
+  right:280px;
+  z-index: 3;
+  transition-delay: .2s;
+}
+.shopdanawa > .inner .rose.rose02 { 
+  transform: translateY(10);
+  left: 300px;
+}
+.shopdanawa > .inner .rose.rose03 { 
+  transform: translateY(5);
+  left: 400px;
+  z-index: 3;
+}
+.shopdanawa > .inner .rose.rose04 { 
+  transform: translateY(2);
+  right:400px;
+}
+.shopdanawa > .inner > img.case,
+.shopdanawa > .inner > img.text {
   margin: 0 auto;
 }
 .shopdanawa > .inner > img:nth-child(2) {
-  margin-top: 30px;
+  margin-top: 20px;
 }
